@@ -1,0 +1,71 @@
+
+name: "Engineering Task"
+description: "Track refactoring, infrastructure, testing, and technical improvements"
+title: "[Task]: "
+labels: ["engineering"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe the technical objective and why it matters.
+        Detailed implementation plans and acceptance criteria
+        will be developed during engineering analysis.
+
+  - type: textarea
+    id: objective
+    attributes:
+      label: Technical Objective
+      description: What needs to be improved or accomplished?
+      placeholder: Describe the technical goal.
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Reason for Change
+      description: Why is this work necessary?
+      placeholder: Explain the problem or benefit.
+    validations:
+      required: true
+
+  - type: textarea
+    id: current_state
+    attributes:
+      label: Current State
+      description: How does the system currently work?
+    validations:
+      required: false
+
+  - type: textarea
+    id: desired_state
+    attributes:
+      label: Desired State
+      description: What should be different after completion?
+    validations:
+      required: false
+
+  - type: textarea
+    id: components
+    attributes:
+      label: Potentially Affected Components
+      description: Known modules, services, files, or dependencies.
+    validations:
+      required: false
+
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Constraints and Risks
+      description: Compatibility, security, performance, or regression concerns.
+    validations:
+      required: false
+
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: Related issues, pull requests, documentation, or test results.
+    validations:
+      required: false
