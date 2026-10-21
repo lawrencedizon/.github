@@ -1,0 +1,64 @@
+
+name: "Feature Request"
+description: "Propose new application functionality"
+title: "[Feature]: "
+labels: ["feature"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Focus on the user problem and desired outcome.
+        Detailed requirements and implementation design
+        will be developed during engineering analysis.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or Opportunity
+      description: What user need or opportunity motivates this feature?
+      placeholder: Describe the problem or opportunity.
+    validations:
+      required: true
+
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired Outcome
+      description: What should users be able to accomplish?
+      placeholder: Describe the expected result.
+    validations:
+      required: true
+
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Proposed Behavior
+      description: How do you imagine this feature working?
+      placeholder: Initial ideas, not final requirements.
+    validations:
+      required: false
+
+  - type: textarea
+    id: use_cases
+    attributes:
+      label: User Scenarios
+      description: When and how would someone use this feature?
+    validations:
+      required: false
+
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Constraints and Non-Goals
+      description: What limitations or boundaries should be considered?
+    validations:
+      required: false
+
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: Mockups, screenshots, related issues, or documentation.
+    validations:
+      required: false
